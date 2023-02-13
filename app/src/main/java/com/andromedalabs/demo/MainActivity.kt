@@ -177,5 +177,5 @@ class MainActivity : AppCompatActivity() {
         val conversionScale = context.resources.displayMetrics.density
         return (nDP * conversionScale + 0.5f)
     }
-
+https://stackoverflow.com/questions/6650398/android-imageview-zoom-in-and-zoom-out
 }
