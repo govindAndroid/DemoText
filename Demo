@@ -1,0 +1,13 @@
+fun seekBarSetup(){
+        try {
+            runnable = Runnable {
+                PlayerActivity.binding.tvSeekBarStart.text =
+                    formatDuration(mediaPlayer!!.currentPosition.toLong())
+                PlayerActivity.binding.seekBar.progress = mediaPlayer!!.currentPosition
+                Handler(Looper.getMainLooper()).postDelayed(runnable, 200)
+            }
+            Handler(Looper.getMainLooper()).postDelayed(runnable, 0)
+        }catch (e :Exception){
+            e.printStackTrace()
+        }
+    }
